@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import { Alert, StyleSheet } from 'react-native';
 import TouchID from "react-native-touch-id";
-import { useHistory, withRouter } from "react-router-dom";
-import Background from '../Components/background'
-import Header from '../Components/header'
-import TextInput from '../Components/textinput'
-import Button from '../Components/button'
+import { withRouter } from "react-router-dom";
+import Background from '../Components/background';
+import Header from '../Components/header';
+import TextInput from '../Components/textinput';
+import Button from '../Components/button';
 
 class login extends Component {
 	constructor() {
@@ -56,8 +56,7 @@ class login extends Component {
 				this.props.history.push('/Home');
 			})
 			.catch(error => {
-				console.log(error)
-				Alert.alert(error.message);
+				console.log(error);
 			});
 	}
 }
